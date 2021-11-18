@@ -1,4 +1,5 @@
 SegmentDisplay	KEYWORD1
 displayHex	KEYWORD2
 displayDecimalPoint	KEYWORD2
+displayMinus    KEYWORD2
 testDisplay	KEYWORD2

@@ -82,6 +82,18 @@ void SegmentDisplay::displayDecimalPoint() {
     }
 }
 
+void SegmentDisplay::displayMinus(boolean decimalPointFlag = false) {
+    for(int i = 0; i < 8; i++) {
+        if(i == 8) {
+            digitalWrite(pins[i], 0);
+        } else if(i == 3 && decimalPointFlag) {
+            digitalWrite(pins[i], 0);
+        } else {
+            digitalWrite(pins[i], 1);
+        }
+    }
+}
+
 void SegmentDisplay::testDisplay() {
 	for(int i = 0; i <= 15; i++) {
 		displayHex(i, false);
